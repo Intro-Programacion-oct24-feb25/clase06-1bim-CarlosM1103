@@ -1,6 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+    Existe una modificación en el proceso de la problemática, el porcentaje del
+    descuento del seguro será ingresado por teclado.
+    Considerar, los valores posibles a ingresar son: entre 1 y 15, si la persona
+    ingresa un valor fuera de este rango, el valor del porcentaje va a ser 10
  */
 package paquete2;
 
@@ -28,7 +32,7 @@ public class ComercioTres {
         double coeficiente = 0.6;
         double bono  = 0;
         
-        double porcentajeSeguro = 8;
+        double porcentajeSeguro = 10;
         double adicionalSeguro;
         
         double sueldoFinal; 
@@ -48,6 +52,15 @@ public class ComercioTres {
         System.out.println("Ingrese el número de productos vendidos "
                 + "por favor");
         numeroProductos = entrada.nextInt();
+        
+        System.out.println("Ingrese el porcentaje del adicional del seguro "
+                + "por favor");
+        porcentajeSeguro = entrada.nextDouble();
+        
+        
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15){
+            porcentajeSeguro = 10; 
+        }
         
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
