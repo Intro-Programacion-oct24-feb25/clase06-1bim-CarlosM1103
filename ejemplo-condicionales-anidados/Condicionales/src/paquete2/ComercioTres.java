@@ -59,26 +59,37 @@ public class ComercioTres {
         
         
         // opción 1
+        /* Si funciona porque al dar un numero menor a 1 y mayor a 15 se utiliza
+        la condición else que le dará el valor 10
         if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
             porcentajeSeguro = porcentajeSeguro + 0;
         } else {
             porcentajeSeguro = 10;
         }
+        */
         
         // opción 2
+        /* No funciona ya que si se pone un número menor a 1 no va a tomar el 
+        valor de 10, solo lo hará si es mayor a 15 
         if (porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
-
-         // opción 3
+        */
+        // opción 3
+        /* Si funciona porque al dar un numero menor a 1 o mayor a 15 
+         */
         if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
 
         // opción 4
+        /* No funciona ya que si se pone un número menor a 1 no va a tomar el 
+        valor de 10 porque no existe un númeor menor a 1 y mayor a 15 al mismo 
+        tiempo 
         if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
             porcentajeSeguro = 10;
         }
+        */
         
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
