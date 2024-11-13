@@ -13,6 +13,7 @@ public class EjemploCadenas {
     public static void main(String[] args) {
         String ciudad = "loJa";
         ciudad = ciudad.toUpperCase();
+        // Sale en minuscula pero no es un valor asignado
         System.out.printf("%s\n", ciudad.toLowerCase());
         // System.out.printf("%s\n", ciudad.toUpperCase());
         System.out.printf("%s\n", ciudad);
