@@ -31,6 +31,7 @@ public class Ejemplo032 {
         
         nombre = nombre.toLowerCase();
         
+        // subString sirve para obtener la primera letra en una cadena va desde 0 obligatoriamente
         String nombre2 = nombre.substring(0,1);
         char valor = nombre.charAt(0); // obtener el primer caracter de una
                                        // cadena
