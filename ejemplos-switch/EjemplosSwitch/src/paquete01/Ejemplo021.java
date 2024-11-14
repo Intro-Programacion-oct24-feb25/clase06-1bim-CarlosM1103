@@ -32,8 +32,13 @@ public class Ejemplo021 {
         System.out.println("Ingrese el número de día en el que naciste");
         int numeroDia = entrada.nextInt();
         
+        int numeroMes = 0;
+        
+        while(numeroMes <= 1 || numeroMes >=12){
         System.out.println("Ingrese el numero de mes en el que nació");
-        int numeroMes = entrada.nextInt();
+        numeroMes = entrada.nextInt();
+        }
+        
         
         System.out.println("Ingrese el numero de año en el que nació");
         int numeroAño = entrada.nextInt();
